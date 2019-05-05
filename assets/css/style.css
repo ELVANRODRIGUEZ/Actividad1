@@ -72,6 +72,8 @@ body {
     z-index: 3;
     left: -30px;
     top: 0px;
+    filter: drop-shadow(5px 5px 5px rgb(61, 61, 61));
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -84,29 +86,42 @@ body {
 
 
 #navContainer {
-    /* height: 200px; */
-    /* width: 300px; */
-    /* background-color: rgb(28, 184, 13); */
-    /* opacity: .4; */
+    background-color: rgb(31, 67, 87);
+    color: rgb(199, 210, 212);
     position: absolute;
-    left: 160px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 3;
-    color: rgb(0, 0, 0);
+    z-index: 4;
+    filter: drop-shadow(10px 10px 10px rgb(122, 122, 122));
     font-size: 18pt;
+    line-height: 36pt;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width: 580px) {
     #navContainer {
-        top: 150%;
-        background-color: rgb(0, 0, 0);
+        left: 50%;
         color: rgb(255, 255, 255);
-        padding: 10px;
+        padding-top: 700px;
+        z-index: 1;
+        font-size: 14pt;
+        line-height: 28pt;
+        font-weight: 400;
     }
 
+
+}
+
+.navItems {
+    margin: 10px 20px 10px 180px;
+}
+
+@media only screen and (max-width: 580px) {
+    .navItems {
+        margin: 10px 20px 10px 20px;
+    }
 
 }
 
@@ -115,7 +130,7 @@ body {
 
 .bodyRow {
     width: 70%;
-    margin: 65px 0px 50px auto;
+    margin: 65px 0px 35px auto;
     filter: drop-shadow(10px 0 10px black);
 }
 
@@ -128,17 +143,12 @@ body {
 
 
 #textCol {
-    background-color: rgb(114, 143, 105, .65);
-    padding: 40px;
+    background-color: rgb(114, 143, 105);
+    padding: 35px;
     text-align: justify;
     text-justify: auto;
 }
 
-@media only screen and (max-width: 720px) {
-    #textCol {
-        padding-left: 80px;
-    }
-}
 
 @media only screen and (max-width: 580px) {
     #textCol {
@@ -149,15 +159,22 @@ body {
 .genText {
     color: rgb(50, 51, 54);
     margin: 0;
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 500;
     font: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 720px) {
     .genText {
         font-size: 12pt;
+
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .genText {
+        font-size: 11pt;
         font-weight: 300;
     }
 }
