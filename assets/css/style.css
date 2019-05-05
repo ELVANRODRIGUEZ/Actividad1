@@ -1,0 +1,120 @@
+/* ======================================= GENERAL FOR SLIDES*/
+html,
+body {
+    zoom: 100%;
+    width: 100%;
+    min-width: 320px;
+    background-image: url(../images/BackgroundBrick.jpg);
+}
+
+.container-fluid {
+    /* display: flex; */
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ======================================= HEADER*/
+
+.headerRow {
+    min-width: 100%;
+    margin: 0px;
+}
+
+#header {
+    position: relative;
+    padding: 0px;
+    min-width: 100vw;
+}
+
+#headerBanner {
+
+    width: 100%;
+    height: 400px;
+    filter: drop-shadow(10px 0 10px black);
+}
+
+#profPic {
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    bottom: 0px;
+}
+
+@media only screen and (max-width: 580px) {
+    #headerBanner {
+        height: 300px;
+    }
+
+    #profPic {
+        top: 0px;
+        clip-path: inset(0px 0px 154px 0px);
+        width: 320px;
+        height: auto;
+
+    }
+}
+
+#ligthHigh {
+    height: 900px;
+    width: 290px;
+    position: absolute;
+    z-index: 1;
+    left: -30px;
+    top: 0px;
+}
+
+@media only screen and (max-width: 580px) {
+    #ligthHigh {
+        height: 700px;
+        z-index: -1;
+        width: 290px;
+    }
+}
+
+
+/* ======================================= HEADER*/
+
+.bodyRow {
+    width: 70%;
+    margin: 65px 0px 50px auto;
+    filter: drop-shadow(10px 0 10px black);
+}
+
+
+
+@media only screen and (max-width: 580px) {
+    .bodyRow {
+        width: 100%;
+        margin: 500px 0px 50px auto;
+    } 
+}
+
+#textCol {
+    background-color: rgb(114, 143, 105);
+    padding: 40px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+@media only screen and (max-width: 720px) {
+    #textCol {
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #textCol {
+        padding: 15px;
+    }
+}
+
+.genText {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 18pt;
+    font-weight: 500;
+    font: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
