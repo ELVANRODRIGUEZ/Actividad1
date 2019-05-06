@@ -121,8 +121,8 @@ $(document).ready(function () {
         "This is a trivia related to films. The user gets a multiple option quiz in which film related questions will be asked. He/she will have a time limit to answer; if the answer is correct, a short film will be played on th screen, but if it is wrong, no short film will be played but the right answer will be shown, as opposed to not answering at all, in which case the user will not even get the right answer as feedback. At the end, the score will be given to the user.",
         "This web app retrieves gifs from Giphy platform in a poker like fashion. The user needs to input a subject, when it gets shown with a cassino coin below the input box, he/she will have to use that coin to pay a game and be allowed to hit the cards maze, after doing so, 4 results of the input subject will be shown upon the poker table and within the thrown cards. If the user wants to retrieve different results, a new payment will have to be done. The input subjects can be erased from view as well.",
         "This is a very useful web app to take note of assistance at construction sites. It uses Firebase to store the info and allows to enter the worked hours for each day of the week. Two tables are related; 'Trabajadores' table keeps record of all the workers that will be taken assistance from, and 'Lista de rayas' table keeps the assistance list itself. Functionality to keep consistancy in the input form was added, along with 'edition mode' to fixed mistyped info as well 'deletion' option. Automatic operations were added to calculate the worker weekly payment according to the input data.",
-        "",
-        ""
+        "This is a bootcamp first milestone project. It asks the user to enter birth information to retrieve Wester, Chinese and Egyptian horoscopes. The first one is gotten from an open source API, but the last two are hard coded and thus, they are not dynamic, but date calculations need to be done with MomentJs to link the data, which is stored in Firebase, to the input birth date. Additionally, and more importantly, astronomic informations are given to the user also based on his/her birth data; Last birthday earth pictures; Solar explosions that occurred the closest to the user last decade transition (or birth if he/she is younger than 10 years); Solar and moon info about the user birth date; Closest to earth asteroids at user's birth date; and finally, a set of pictures from NASA's 'Picture of the day' archive. Almost all info is retrieved using different NASA's APIs.",
+        "This is very handy web app that takes in an XML Mexican invoice (or a bunch of them) and read through each one to get certain information that is then shown within a table. Info like provider data, fiscal UUID, invoice total ammount, invoice ammount without taxes etc. Additionally, it calculates some more data to show the user how deductible that invoice might be."
     ]
 
 
@@ -138,7 +138,7 @@ $(document).ready(function () {
             slideCounter++;
             $(this).css("opacity", ".25");
         }
-        
+
         $project.text(projectName[slideCounter]);
         // $video.;
         $projectDescprition.text(projectDescriptionArr[slideCounter]);
@@ -146,6 +146,8 @@ $(document).ready(function () {
         $siteRepo.attr("href", siteRepoArr[slideCounter]);
         $siteLink.text(linksArr[slideCounter].name);
         $siteRepo.text(linksArr[slideCounter].repo);
+
+        window.scrollTo(0, 400);
 
     });
 
@@ -169,6 +171,8 @@ $(document).ready(function () {
         $siteRepo.attr("href", siteRepoArr[slideCounter]);
         $siteLink.text(linksArr[slideCounter].name);
         $siteRepo.text(linksArr[slideCounter].repo);
+
+        window.scrollTo(0, 400);
 
     });
 
