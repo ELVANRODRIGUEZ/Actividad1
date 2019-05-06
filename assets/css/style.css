@@ -47,18 +47,18 @@ body {
 
 @media only screen and (max-width: 580px) {
     #headerCol {
-        height: 350px;
+        height: 200px;
     }
 
     #headerBanner {
-        height: 350px;
+        height: 200px;
         z-index: 2;
     }
 
     #profPic {
-        top: 0px;
-        clip-path: inset(0px 0px 104px 0px);
-        width: 320px;
+        bottom: -61px;
+        clip-path: inset(0px 0px 61px 0px);
+        width: 185px;
         height: auto;
         z-index: 3;
 
@@ -80,6 +80,7 @@ body {
     #ligthHigh {
         height: 700px;
         z-index: 1;
+        top: -180px;
         left: -55px;
         width: 270px;
     }
@@ -103,9 +104,9 @@ body {
 
 @media only screen and (max-width: 580px) {
     #navContainer {
-        left: 50%;
+        left: 55%;
         color: rgb(255, 255, 255);
-        padding-top: 700px;
+        padding-top: 500px;
         z-index: 2;
         font-size: 14pt;
         line-height: 28pt;
@@ -188,20 +189,20 @@ body {
 /* ======================================= VIDEOS*/
 
 #projectName {
-    color:rgb(195, 198, 209);
+    color: rgb(195, 198, 209);
     font-weight: 700;
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 580px) {
     #projectName {
-        font-size:22px;
+        font-size: 22px;
         font-weight: 600;
     }
 }
 
-#videoContainer{
-    width: calc( 100% + 70px );
+#videoContainer {
+    width: calc(100% + 70px);
     position: relative;
     margin: 0 -35px;
     padding-top: 10%;
@@ -210,14 +211,14 @@ body {
 
 @media only screen and (max-width: 580px) {
     #videoContainer {
-        width: calc ( 100% + 40px );
+        width: calc (100% + 40px);
     }
 }
 
 .videos {
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 #playPauseIcon {
