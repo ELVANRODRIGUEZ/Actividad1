@@ -201,11 +201,17 @@ body {
 }
 
 #videoContainer{
-    width: 100%;
+    width: calc( 100% + 70px );
     position: relative;
-    margin:0;
+    margin: 0 -35px;
     padding-top: 10%;
     padding-bottom: 10%;
+}
+
+@media only screen and (max-width: 580px) {
+    #videoContainer {
+        width: calc ( 100% + 40px );
+    }
 }
 
 .videos {

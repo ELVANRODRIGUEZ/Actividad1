@@ -127,6 +127,8 @@ $(document).ready(function () {
 
 
     next.on("click", function () {
+        pauseVideo();
+        
         if (slideCounter == 0) {
             previous.css("opacity", "1");
 
@@ -154,6 +156,8 @@ $(document).ready(function () {
     });
 
     previous.on("click", function () {
+        pauseVideo();
+
         if (slideCounter == 6) {
             next.css("opacity", "1");
             slideCounter--;
