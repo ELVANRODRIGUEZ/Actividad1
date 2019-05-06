@@ -8,8 +8,10 @@ $(document).ready(function () {
     var $playIcon = $("#playPauseIcon");
     var playIconToggler = true;
 
-    $videoControl.loop = true;
-
+    if ($videoControl) {
+        $videoControl.loop = true;
+    }
+    
     $playIcon.on("click", function () {
         if (playIconToggler) {
             playVideo();
@@ -128,7 +130,7 @@ $(document).ready(function () {
 
     next.on("click", function () {
         pauseVideo();
-        
+
         if (slideCounter == 0) {
             previous.css("opacity", "1");
 

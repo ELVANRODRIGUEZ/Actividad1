@@ -53,7 +53,7 @@
             <div id="headerCol" class="col-12">
                 <div id="navContainer">
                     <p class="navItems"><a href="index.html">About</a></p>
-                    <p class="navItems"><a href="contact.html">Contact</a></p>
+                    <p class="navItems"><a href="projects.html">Projects</a></p>
                 </div>
                 <img id="headerBanner" src="assets/images/HeaderBanner.jpg" alt="HeaderBanner">
                 <img id="profPic" src="assets/images/ProfilePic.png" alt="ProfilePicture">
@@ -64,27 +64,20 @@
 
         <div class="row bodyRow">
             <div class="textCol col-12 justify-content-center">
-                <h3 id="projectName">COSMIC HANGMAN</h3>
-                <div id="videoContainer">
-                    <video class="videos" id="shownVideo">
-                        <source id="videoSource" src="assets/videos/CosmicHangman.mp4" type="video/mp4">
-                    </video>
-                    <img id="playPauseIcon" src="assets/images/PlayPausIcon.png">
+                <div class="form-group">
+                    <label class="labels" for="name">Name:</label>
+                    <input type="text" class="form-control inputs" id="name" placeholder="Name">
                 </div>
-                <p id="projectDescprition" class="genText">This project is a simple Hangman game with cosmic motives.
-                    User is given an Astrophysics related word to guess. Word's number of letters will be the only
-                    initial hint at a hand. There is a wrong letter input limit after which the user will lose the game.
-                    There is also tracking for won and lost games.</p><br><br>
-                <p class="genText">
-                    Please visit project site at: <a id="siteLink" class="links"
-                        href="https://elvanrodriguez.github.io/COSMIC-HANGMAN/" target="_blank">COSMIC-HANGMAN.</a><br>
-                    Additionally, you can take a look at the project repo at: <a id="siteRepo" class="links"
-                        href="https://github.com/ELVANRODRIGUEZ/COSMIC-HANGMAN" target="_blank">COSMIC-HANGMAN_repo.</a>
-                </p>
-                <div id="projectNavigation">
-                    <img id="prev" class="navButtons" src="assets/images/NextButton.PNG" alt="Previous">
-                    <img id="next" class="navButtons" src="assets/images/NextButton.PNG" alt="Next">
+                <div class="form-group">
+                    <label class="labels" for="emailAddress">Email address:</label>
+                    <input type="email" class="form-control inputs" id="emailAddress"
+                        placeholder="email@mailprovider.com">
                 </div>
+                <div class="form-group">
+                    <label class="labels" for="message">Message:</label>
+                    <textarea class="form-control inputs" id="message" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
             </div>
         </div>
 

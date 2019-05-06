@@ -94,7 +94,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 4;
-    filter: drop-shadow(10px 10px 10px rgb(122, 122, 122));
+    filter: drop-shadow(10px 10px 9px rgb(122, 122, 122));
     font-size: 18pt;
     line-height: 36pt;
     font-weight: 500;
@@ -132,7 +132,7 @@ body {
 .bodyRow {
     width: 70%;
     margin: 65px 0px 35px auto;
-    filter: drop-shadow(10px 0 10px black);
+    filter: drop-shadow(20px 2px 18px rgb(0, 0, 0));
 }
 
 @media only screen and (max-width: 580px) {
@@ -255,4 +255,42 @@ body {
 
 #next {
     right: 15%;
+}
+
+
+/* ======================================= VIDEOS*/
+
+.labels {
+    text-decoration: underline;
+    color: rgb(50, 51, 54);
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14pt;
+    font-weight: 500;
+    font: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@media only screen and (max-width: 720px) {
+    .labels {
+        font-size: 12pt;
+
+    }
+}
+
+.inputs {
+    color: rgb(0, 0, 0);
+    font-size: 14pt;
+    font-weight: 500;
+    font: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@media only screen and (max-width: 720px) {
+    .inputs {
+        font-size: 12pt;
+
+    }
 }
