@@ -187,14 +187,14 @@ body {
 
 /* ======================================= VIDEOS*/
 
-.projectName {
+#projectName {
     color:rgb(195, 198, 209);
     font-weight: 700;
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 580px) {
-    .projectName {
+    #projectName {
         font-size:22px;
         font-weight: 600;
     }
