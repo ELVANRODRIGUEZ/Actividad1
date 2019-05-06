@@ -108,12 +108,12 @@ $(document).ready(function () {
     ];
     var projectVideoArr = [
         "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4",
-        "assets/videos/CosmicHangman.mp4"
+        "assets/videos/FightingGame.mp4",
+        "assets/videos/FilmTrivia.mp4",
+        "assets/videos/GifPoker.mp4",
+        "assets/videos/AssistanceList.mp4",
+        "assets/videos/YouInTheUniverse.mp4",
+        "assets/videos/Facturas.mp4"
     ];
     var projectDescriptionArr = [
         "This project is a simple Hangman game with cosmic motives. User is given an Astrophysics related word to guess. Word's number of letters will be the only initial hint at a hand. There is a wrong letter input limit after which the user will lose the game. There is also tracking for won and lost games.",
@@ -140,7 +140,9 @@ $(document).ready(function () {
         }
 
         $project.text(projectName[slideCounter]);
-        // $video.;
+        $videoControl.pause();
+        $("#videoSource").attr("src", projectVideoArr[slideCounter]);
+        $videoControl.load();
         $projectDescprition.text(projectDescriptionArr[slideCounter]);
         $siteLink.attr("href", siteLinkArr[slideCounter]);
         $siteRepo.attr("href", siteRepoArr[slideCounter]);
@@ -165,7 +167,9 @@ $(document).ready(function () {
         }
 
         $project.text(projectName[slideCounter]);
-        // $video.;
+        $videoControl.pause();
+        $("#videoSource").attr("src", projectVideoArr[slideCounter]);
+        $videoControl.load();
         $projectDescprition.text(projectDescriptionArr[slideCounter]);
         $siteLink.attr("href", siteLinkArr[slideCounter]);
         $siteRepo.attr("href", siteRepoArr[slideCounter]);

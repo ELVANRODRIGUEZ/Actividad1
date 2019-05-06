@@ -220,6 +220,7 @@ body {
     top: 20%;
     margin-left: 50%;
     transform: translateX(-50%);
+    opacity: .60;
 }
 
 #projectNavigation {
