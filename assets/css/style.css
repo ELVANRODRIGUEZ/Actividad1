@@ -226,28 +226,28 @@ body {
 #playPauseIcon {
     position: absolute;
     width: 50%;
-    top: 20%;
+    top: 16%;
     margin-left: 50%;
     transform: translateX(-50%);
     opacity: .60;
 }
 
 #projectNavigation {
-    margin-top: 10%;
-    margin-bottom: 20%;
+    margin-top: 15%;
+    margin-bottom: 35%;
     width: 100%;
     position: relative;
 
 }
 
 .navButtons {
-    height: 60px;
+    height: 100px;
     position: absolute;
 }
 
 @media only screen and (max-width: 580px) {
     .navButtons {
-        height: 30px;
+        height: 50px;
     }
 }
 
