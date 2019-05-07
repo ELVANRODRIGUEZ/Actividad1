@@ -78,8 +78,8 @@ body {
 
 @media only screen and (max-width: 580px) {
     #ligthHigh {
-        height: 700px;
-        z-index: 1;
+        height: 725px;
+        z-index: 2;
         top: -180px;
         left: -55px;
         width: 270px;
@@ -104,9 +104,11 @@ body {
 
 @media only screen and (max-width: 580px) {
     #navContainer {
-        left: 55%;
+        /* width: 40%; */
+        right: 0;
+        left: auto;
         color: rgb(255, 255, 255);
-        padding-top: 500px;
+        padding-top: 530px;
         z-index: 2;
         font-size: 14pt;
         line-height: 28pt;
