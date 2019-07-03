@@ -253,7 +253,7 @@ body {
 
 #prev {
     left: 15%;
-    opacity: .25;
+    visibility: hidden;
 }
 
 #next {
