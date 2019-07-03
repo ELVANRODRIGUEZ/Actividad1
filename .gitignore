@@ -3,7 +3,18 @@ PushNot/
 assets/desktop.ini
 assets/css/desktop.ini
 assets/images/desktop.ini
-assets/videos/
+# assets/videos/
 assets/javascript/desktop.ini
 assets/other/desktop.ini
 desktop.ini
+
+assets\videos\AssistanceList.mp4
+assets\videos\CosmicHangman.mp4
+assets\videos\Facturas.mp4
+assets\videos\FightingGame.mp4
+assets\videos\FilmTrivia.mp4
+assets\videos\FilmTrivia.mp4
+assets\videos\GifPoker.mp4
+assets\videos\YouInTheUniverse.mp4
+
+
