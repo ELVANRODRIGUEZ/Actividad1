@@ -1,5 +1,5 @@
-# **YOU IN THE UNIVERSE**
+# **ACTIVIDAD 1**
 
-**DESCRIPTION**
+**DESCRIPCION**
 
-This portfolio showcases the different projects that I will be developing througout Tecnológico de Monterrey Full Stack Developer Bootcamp. It will include all the assignemts and the personal projects I manage to build with the aquired knowledge for my personal professional usage.
+Este página constituye la primera actividad para la clase de DESARROLLO DE APLICACIONES EN RED y se trata de un muy sencillo portafolio personal.
