@@ -265,3 +265,9 @@ img {
     height: auto;
     display: block;
 }
+
+/* ======================================= CONTACT PANEL*/
+
+.contactText a {
+    color: #0006ff
+}
