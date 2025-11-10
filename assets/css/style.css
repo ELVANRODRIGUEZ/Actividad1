@@ -1,7 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 /* ======================================= GENERAL FOR SLIDES*/
 html,
 body {
-    zoom: 100%;
+    overflow-x: hidden;
     width: 100%;
     min-width: 320px;
     background-image: url(../images/BackgroundBrick.jpg);
@@ -14,8 +21,11 @@ body {
     min-height: 100vh;
 }
 
-/* ======================================= HEADER*/
+body, .container-fluid, .row {
+  max-width: 100%;
+}
 
+/* ======================================= HEADER*/
 .headerRow {
     min-width: 100%;
     margin: 0px;
@@ -129,25 +139,24 @@ body {
 
 }
 
-
 /* ======================================= TEXT ROW*/
 
 .bodyRow {
     width: 70%;
-    margin: 65px 0px 35px auto;
+    margin: auto 0px 35px auto;
     filter: drop-shadow(20px 2px 18px rgb(0, 0, 0));
 }
 
 @media only screen and (max-width: 580px) {
     .bodyRow {
         width: 100%;
-        margin: 300px 0px 50px auto;
+        margin: 300px auto 50px auto;
     }
 }
 
 
 .textCol {
-    background-color: rgb(114, 143, 105);
+    background-color: rgb(106, 121, 101);
     padding: 35px;
     text-align: justify;
     text-justify: auto;
@@ -155,7 +164,7 @@ body {
 
 
 @media only screen and (max-width: 580px) {
-    #textCol {
+    .textCol {
         padding: 25px;
     }
 }
@@ -187,9 +196,6 @@ body {
     color: rgb(207, 208, 236);
 }
 
-
-/* ======================================= VIDEOS*/
-
 #projectName {
     color: rgb(195, 198, 209);
     font-weight: 700;
@@ -203,22 +209,26 @@ body {
     }
 }
 
-#projectNavigation {
-    margin-top: 15%;
-    margin-bottom: 35%;
-    width: 100%;
-    position: relative;
+/* ======================================= PROYECT PANEL*/
 
+#projectNavigation {
+    margin: 2rem 0;         
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 1rem;
+    position: relative; 
 }
 
 .navButtons {
-    height: 100px;
-    position: absolute;
+    height: 40px;
+    position: static;
 }
 
 @media only screen and (max-width: 580px) {
     .navButtons {
-        height: 50px;
+        height: 20px;
     }
 }
 
@@ -231,67 +241,27 @@ body {
     right: 15%;
 }
 
-
-/* ======================================= VIDEOS*/
-/* 
-#playPauseIcon {
-    position: absolute;
-    width: 50%;
-    top: 16%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    opacity: .60;
+[class*="navButtons"],
+#headerCol, #footerCol {
+  overflow-x: clip;
 }
 
-.labels {
-    text-decoration: underline;
-    color: rgb(50, 51, 54);
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 14pt;
-    font-weight: 500;
-    font: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+#imageContainer {
+    width: 100%;
+    margin: 1.25rem 0;
+    overflow: hidden;           
+    display: flex;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 720px) {
-    .labels {
-        font-size: 12pt;
-
-    }
+#projImage {
+    width: min(900px, 100%); 
+    height: auto;
+    object-fit: contain;
 }
 
-.inputs {
-    color: rgb(0, 0, 0);
-    font-size: 14pt;
-    font-weight: 500;
-    font: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-
-@media only screen and (max-width: 720px) {
-    .inputs {
-        font-size: 12pt;
-
-    }
-}
-
-.contactText {
-    color: rgb(50, 51, 54);
-    margin: 0;
-    margin-left: 40px;
-    font-size: 14pt;
-    font-weight: 500;
-    font: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media only screen and (max-width: 720px) {
-    .contactText {
-        font-size: 12pt;
-        margin-left: 10px;
-
-    }
-} */
